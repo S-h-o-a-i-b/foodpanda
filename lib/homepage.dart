@@ -4,30 +4,17 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.pink[50], // Light pink background
+      backgroundColor: Colors.white, // Light pink background
       appBar: AppBar(
-        title: Text("UI Design"),
+        title: Text("Food Panda",style: TextStyle(color: Colors.white,fontWeight: FontWeight.bold),),
         centerTitle: true,
+        backgroundColor: Colors.pink,
       ),
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
           // Food Panda Full-Width Background
-          Container(
-            width: double.infinity,
-            color: Colors.pink,
-            padding: EdgeInsets.symmetric(vertical: 15),
-            child: Center(
-              child: Text(
-                "Food Panda",
-                style: TextStyle(
-                  fontSize: 22,
-                  fontWeight: FontWeight.bold,
-                  color: Colors.white,
-                ),
-              ),
-            ),
-          ),
+
           SizedBox(height: 20),
           Center(
             child: Column(
